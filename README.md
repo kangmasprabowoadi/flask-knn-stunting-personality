@@ -27,13 +27,22 @@ Aplikasi ini dibalut dengan antarmuka **Glassmorphism** yang modern, responsif, 
 * **Machine Learning:** Scikit-Learn (K-Nearest Neighbors), Pandas, Numpy, Joblib
 * **Frontend:** HTML5, Tailwind CSS, Lucide Icons
 
-## 📸 Tangkapan Layar (Screenshots)
-
-*(Catatan: Jangan lupa unggah screenshot web kamu ke folder repo, lalu ganti link gambar di bawah ini dengan nama file screenshot kamu)*
-
-* **Menu Utama:** ![Menu Utama](link-gambar-menu-utama.png)
-* **Prediksi Stunting:** ![Stunting](link-gambar-stunting.png)
-* **Analisis Kepribadian:** ![Personality](link-gambar-personality.png)
+📁 Struktur Direktori
+Plaintext
+/
+├── app.py                           # File utama backend (Flask)
+├── model_knn_personality.pkl        # Model KNN Kepribadian
+├── scaler_personality.pkl           # Scaler numerik Kepribadian
+├── label_encoders.pkl               # Label encoder kategorikal Kepribadian
+├── model_knn_stunting.pkl           # Model KNN Stunting
+├── scaler.pkl                       # Scaler numerik Stunting
+├── static/                          
+│   ├── introvert.png                # Ilustrasi hasil introvert
+│   └── extrovert.png                # Ilustrasi hasil ekstrovert
+└── templates/
+    ├── index.html                   # UI Portal Utama
+    ├── personality.html             # UI Analisis Kepribadian
+    └── stunting.html                # UI Deteksi Stunting
 
 ## 🚀 Cara Menjalankan Aplikasi di Komputer Lokal
 
